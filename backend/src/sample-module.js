@@ -6,7 +6,7 @@
     title.textContent = "示例云模块已启用";
 
     var tips = document.createElement("p");
-    tips.textContent = "该模块由服务端授权并远程下发（CI gate 负例验证）。";
+    tips.textContent = "该模块由服务端授权并远程下发（CI gate 正例验证）。";
 
     var button = document.createElement("button");
     button.textContent = "在 AI 里创建测试文本";
