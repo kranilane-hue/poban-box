@@ -1,0 +1,29 @@
+{
+  "catalogVersion": "1.0.0",
+  "updatedAt": "2026-04-20T18:30:00+08:00",
+  "owner": "backend-core",
+  "apis": [
+    {
+      "id": "auth.login",
+      "method": "POST",
+      "path": "/v1/auth/login",
+      "owner": "backend-core",
+      "status": "active"
+    }
+  ],
+  "events": [
+    {
+      "id": "payment.succeeded",
+      "owner": "payment-dev",
+      "status": "active"
+    }
+  ],
+  "errorCodes": [
+    {
+      "code": "AUTH_INVALID",
+      "httpStatus": 401,
+      "owner": "backend-core",
+      "status": "active"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cloud Plugin Center</title>
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>云端插件中心</h1>
+    <p class="hint">登录后按订阅授权加载远程模块。</p>
+
+    <section id="loginSection" class="card">
+      <h2>登录</h2>
+      <label>用户名 <input id="username" value="demo" /></label>
+      <label>密码 <input id="password" type="password" value="demo123" /></label>
+      <button id="loginBtn">登录</button>
+      <pre id="loginMessage"></pre>
+    </section>
+
+    <section id="accountSection" class="card hidden">
+      <h2>账户状态</h2>
+      <div id="licenseState">-</div>
+      <div class="actions">
+        <button id="payBtn">创建订阅订单(模拟)</button>
+        <button id="refreshBtn">刷新授权</button>
+        <button id="logoutBtn">退出</button>
+      </div>
+      <pre id="statusLog"></pre>
+    </section>
+
+    <section class="card">
+      <h2>热重载</h2>
+      <div class="actions">
+        <button id="reloadPanelBtn">重载面板</button>
+        <button id="reloadJsxBtn">重载 JSX</button>
+      </div>
+      <pre id="reloadLog"></pre>
+    </section>
+
+    <section class="card">
+      <h2>模块容器</h2>
+      <div id="moduleContainer">尚未加载模块。</div>
+    </section>
+  </div>
+  <script src="./js/CSInterface.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
