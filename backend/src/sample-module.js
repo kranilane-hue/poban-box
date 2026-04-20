@@ -19,6 +19,5 @@
 
     ctx.container.appendChild(title);
     ctx.container.appendChild(tips);
-    ctx.container.appendChild(button);
   }
 })
