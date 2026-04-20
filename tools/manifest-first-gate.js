@@ -10,18 +10,17 @@ function getDiffFiles(baseRef, headRef) {
 
 function isManifestFile(file) {
   return (
-    file.startsWith("app/contracts/") ||
-    file === "app/docs/RC001-统一清单权威源与生成链路.md" ||
-    file === "app/docs/RC001-版本语义与兼容规则.md" ||
-    file === "app/docs/RC001-错误码分段与弃用策略.md"
+    file.startsWith("contracts/") ||
+    file === "docs/RC001-统一清单权威源与生成链路.md" ||
+    file === "docs/RC001-版本语义与兼容规则.md" ||
+    file === "docs/RC001-错误码分段与弃用策略.md"
   );
 }
 
 function isImplementationFile(file) {
-  if (!file.startsWith("app/")) return false;
-  if (file.startsWith("app/docs/")) return false;
-  if (file.startsWith("app/contracts/")) return false;
-  if (file.startsWith("app/tools/")) return false;
+  if (file.startsWith("docs/")) return false;
+  if (file.startsWith("contracts/")) return false;
+  if (file.startsWith("tools/")) return false;
   return /\.(js|ts|tsx|jsx|json|xml|html|css|jsx)$/i.test(file);
 }
 
