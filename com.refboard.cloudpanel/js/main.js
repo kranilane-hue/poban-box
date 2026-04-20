@@ -457,3 +457,5 @@
     updateAuthUI(false);
   }
 })();
+
+// ci-negative-test
