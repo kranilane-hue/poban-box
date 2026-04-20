@@ -34,7 +34,7 @@ function main() {
 
   if (hasImplChange && !hasManifestChange) {
     console.error("manifest-first-gate failed: 检测到实现变更，但未检测到清单/规则变更。");
-    console.error("请先修改 app/contracts 或 RC001 规则文档，再提交实现改动。");
+    console.error("请先修改 contracts 或 RC001 规则文档，再提交实现改动。");
     process.exit(1);
   }
 
